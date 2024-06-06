@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.component{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.component img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.component img:last-of-type{
+    display: none;
+}
+
+.component-content{
+    background-color: white;
+    padding: 0.5rem 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 1rem 1rem;
+
+}
+
+.component p:first-child{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.component-content h1{
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-size: 38px;
+    line-height: 1;
+}
+
+
+.prices{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0px;
+}
+.prices h2{
+    color:hsl(158, 36%, 37%) ;
+    margin-right: 1rem;
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+}
+
+.prices h5{
+    color: hsl(228, 12%, 48%);
+   text-decoration: line-through;
+   font-size: 16px;
+
+}
+p{
+    color: hsl(228, 12%, 48%);
+    margin: 1rem 0px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 2;
+    font-weight: 500;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+button svg{
+    margin-right: 1rem;
+}
+
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+.attribution{
+    display:none;
+}
+
+@media only screen and (min-width: 768px){
+
+    .component{
+        width: 768px;
+        flex-direction: row;
+        height: 500px;
+    }
+
+    .component img:first-child{
+        display: none;
+    }
+
+    .component img:last-of-type{
+        display: block;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .component-content{
+        width: 90%;
+        border-radius: 0 1rem 1rem 0;
+        padding: 1rem 2rem 1rem 3rem;
+    }
+
+
+
+    .component-content h1{
+        margin-right: 3rem;
+    }
+
+    p {
+        margin-right: 1rem;
+    }
+
+    .prices{
+        margin-bottom: 2rem ;
+    }
+    button{
+        width: 100%;
+    }
+}
